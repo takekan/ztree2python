@@ -1276,7 +1276,7 @@ plt.show()
 
 
     
-![png](output_file_files/output_file_4_0.png)
+![png](https://github.com/takekan/ztree2python/blob/main/fig1.png)
     
 
 
@@ -1326,4 +1326,4 @@ plt.show()
 
 
     
-![png](output_file_files/output_file_5_0.png)# ztree2python
+![png](https://github.com/takekan/ztree2python/blob/main/fig2.png)# ztree2python
