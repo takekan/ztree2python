@@ -1,6 +1,6 @@
 # ztree2python
 
-ztree2python imports a data file created by z-Tree into python as pandas dataframes.
+ztree2python imports a data file created by z-Tree (Fischbacher, 2007) into python as pandas dataframes.
 This function inputs the "filename" of a z-Tree data file, and it returns a dictionary, which contains the dataframes of the tables.
 The keys are the names of all tables, "globals", "subjects", and so on. The value associated with each key is a pandas dataframe for the table.
 
@@ -1329,4 +1329,6 @@ plt.show()
 
 
     
-![png](https://github.com/takekan/ztree2python/blob/main/fig2.png)# ztree2python
+![png](https://github.com/takekan/ztree2python/blob/main/fig2.png)
+
+Enjjoy!
