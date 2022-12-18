@@ -48,6 +48,7 @@ I would appreciate it if you cite this code in a footnote or acknowledgement (or
 
 Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
 
+
 ## A sample data
     
 ```python
@@ -57,6 +58,7 @@ tables = ztree2python('221215_1449.xls')
 
 
 ```python
+# Extract the data of a table by its name. For example, 
 df = tables['globals']
 df
 ```
@@ -149,6 +151,7 @@ df
 
 
 ```python
+# To display all the tables and the table name list.
 for name, tbl in tables.items():
     display(tbl)
 ```
