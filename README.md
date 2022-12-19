@@ -49,9 +49,13 @@ https://doi.org/10.1007/s10683-006-9159-4.
 
 Takeuchi, K. (2022). ztree2stata: A data converter for z-Tree and Stata users. (*Journal of the Economic Science Association*, R&R.)
 
-I would appreciate it if you cite this code in a footnote or acknowledgement or you can add this to the list of references.
+I would appreciate it if you kindly cite this code in a footnote or acknowledgement it (or you can add this to the list of references).
 
 Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
+
+
+## Acknowledgment 
+Takeuchi thanks Zhewei Song for the helpful feedback. 
 
 ## A sample data
     
