@@ -15,27 +15,27 @@ pip install ztree2python
 Alternatively, simply put ztree2python.py and a z-Tree data file (e.g., 221215_1449.xls) in the current directory or the working directory. 
 
 ## Usage
-
+The ztree2python is a simple function that takes the filename of a z-Tree data file as the argument and returns a dictionary that contains all of the tables in the z-Tree.
 ```python
 from ztree2python import ztree2python as ztree2python
 
 # input the file name, and it returns a dictionary.  
-df = ztree2python('221215_1449.xls')
+tables = ztree2python('221215_1449.xls')
 ```
-The df is a dictionary containing all of the tables. Given the df, you can get the data of a table as follows:
+The function returns a dictionary. Each table is stored as a dataframe in the ```tables```. Get the data of a table as follows:
 ```python
 # Extract a table by name, for example, the "subjects" table.
-my_table = df['subjects']
+my_table = tables['subjects']
 my_table.head()
 ```
-To see all the tables in the df, 
+See all of the tables in ```tables``` as follows:
 ```python
-# The output also contains a series of table names. See the list.
-df['list_tables']
+# The dictionary also contains a series of table names. See the list.
+tables['list_tables']
 
-# To display all the tables in the df.
+# Display all of the tables.
 from IPython.display import display
-for name, tbl in df.items():
+for name, tbl in tables.items():
   display(tbl)
 ```
 
@@ -156,6 +156,7 @@ df
 
 ```python
 # To display all the tables and the table name list.
+from IPython.display import display
 for name, tbl in tables.items():
     display(tbl)
 ```
