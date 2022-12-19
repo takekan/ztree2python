@@ -30,6 +30,7 @@ my_table.head()
 df['list_tables']
 
 # Display all the tables in the df.
+from IPython.display import display
 for name, tbl in df.items():
   display(tbl)
 ```
