@@ -23,7 +23,7 @@ from ztree2python import ztree2python as ztree2python
 df = ztree2python('221215_1449.xls')
 
 # Extract a table by name, for example, the "subjects" table.
-my_table = (df['subjects'])
+my_table = df['subjects']
 my_table.head()
 
 # The output also contains a series of table names. See the list.
