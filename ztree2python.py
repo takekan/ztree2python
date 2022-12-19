@@ -19,7 +19,7 @@
 ###   df = ztree2python('221215_1236.xls')
 ###
 ###   # If you want to extract the "subjects" table for example, then...
-###   my_table = (df['subjects'])
+###   my_table = df['subjects']
 ###   my_table.head()
 ###
 ###   # The output dataframe also contains a series of table names. To see it, type;
