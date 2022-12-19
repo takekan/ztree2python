@@ -12,7 +12,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 pip install ztree2python
 ```
 
-Alternatively, simply put ztree2python.py and a z-Tree data file (e.g., 221215_1236.xls) in the current directory or the working directory. 
+Alternatively, simply put ztree2python.py and a z-Tree data file (e.g., 221215_1449.xls) in the current directory or the working directory. 
 
 ## Usage
 
@@ -20,7 +20,7 @@ Alternatively, simply put ztree2python.py and a z-Tree data file (e.g., 221215_1
 from ztree2python import ztree2python as ztree2python
 
 # input the file name, and it returns a dictionary.  
-df = ztree2python('221215_1236.xls')
+df = ztree2python('221215_1449.xls')
 
 # Extract a table by name, for example, the "subjects" table.
 my_table = (df['subjects'])
