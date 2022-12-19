@@ -1292,19 +1292,19 @@ from ztree2python import ztree2python as ztree2python
 tables = ztree2python('221215_1449.xls')
 df = tables['subjects']
 
-import matplotlib.pyplot as plt
+# extract the unique values from the period column 
+period_values = df['Period'].unique()
+x = period_values
 
-# Group the data by period and compute the mean and standard error of x for each group
+# Group the data by period and compute the mean and standard error of y for each group
 mean_by_period_1 = df[df['Group'] == 1].groupby('Period')['Contribution'].mean()
 se_by_period_1   = df[df['Group'] == 1].groupby('Period')['Contribution'].sem()
 mean_by_period_2 = df[df['Group'] == 2].groupby('Period')['Contribution'].mean()
 se_by_period_2   = df[df['Group'] == 2].groupby('Period')['Contribution'].sem()
 
-# extract the unique values from the period column 
-period_values = df['Period'].unique()
-x = period_values
 
 # Use the plot function to create a line chart of the mean values
+import matplotlib.pyplot as plt
 plt.plot(x, mean_by_period_1, linestyle='solid' , marker='o', color='b', label='Group 1')
 plt.plot(x, mean_by_period_2, linestyle='dashed', marker='o', color='r', label='Group 2')
 
