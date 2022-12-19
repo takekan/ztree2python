@@ -27,10 +27,10 @@ my_table = df['subjects']
 my_table.head()
 
 # The output also contains a series of table names. See the list.
-tables['list_tables']
+df['list_tables']
 
 # Display all the tables in the df.
-for name, tbl in tables.items():
+for name, tbl in df.items():
   display(tbl)
 ```
 
