@@ -39,12 +39,12 @@ for name, tbl in tables.items():
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Reference
-Fischbacher, U. (2007). z-Tree: Zurich toolbox for ready-made economic experiments. Experimental Economics, 10(2), 171-178. 
+Fischbacher, U. (2007). z-Tree: Zurich toolbox for ready-made economic experiments. *Experimental Economics*, 10(2), 171-178. 
 https://doi.org/10.1007/s10683-006-9159-4.
 
-Takeuchi, K. (2023?). ztree2stata: A data converter for z-Tree and Stata users. Journal of the Economic Science Association, R&R.
+Takeuchi, K. (2023?). ztree2stata: A data converter for z-Tree and Stata users. *Journal of the Economic Science Association*, R&R.
 
-I would appreciate it if you cite this code in a footnote or acknowledgement (or you can add this to the list of references!)
+I would appreciate it if you cite this code in a footnote or acknowledgement or you can add this to the list of references.
 
 Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
 
