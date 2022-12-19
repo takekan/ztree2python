@@ -21,15 +21,19 @@ from ztree2python import ztree2python as ztree2python
 
 # input the file name, and it returns a dictionary.  
 df = ztree2python('221215_1449.xls')
-
+```
+The df is a dictionary containing all of the tables. Given the df, you can get the data of a table as follows:
+```python
 # Extract a table by name, for example, the "subjects" table.
 my_table = df['subjects']
 my_table.head()
-
+```
+To see all the tables in the df, 
+```python
 # The output also contains a series of table names. See the list.
 df['list_tables']
 
-# Display all the tables in the df.
+# To display all the tables in the df.
 from IPython.display import display
 for name, tbl in df.items():
   display(tbl)
@@ -48,7 +52,6 @@ Takeuchi, K. (2022). ztree2stata: A data converter for z-Tree and Stata users. (
 I would appreciate it if you cite this code in a footnote or acknowledgement or you can add this to the list of references.
 
 Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
-
 
 ## A sample data
     
