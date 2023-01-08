@@ -15,12 +15,12 @@ pip install ztree2python
 Alternatively, simply put ztree2python.py and a z-Tree data file (e.g., 221215_1449.xls) in the current directory or the working directory. 
 
 ## Usage
-The ztree2python is a simple function that takes the filename of a z-Tree data file as the argument and returns a dictionary that contains all of the tables in the z-Tree.
+The ztree2python is a simple function that takes the filename of a z-Tree data file as the argument and returns a dictionary that contains all of the tables in the z-Tree data file.
 ```python
-from ztree2python import ztree2python as ztree2python
+from ztree2python import ztree2python as z2p
 
 # input the file name, and it returns a dictionary.  
-tables = ztree2python('221215_1449.xls')
+tables = z2p('221215_1449.xls')
 ```
 The function returns a dictionary. Each table is stored as a dataframe in the ```tables```. Get the data of a table as follows:
 ```python
@@ -39,19 +39,27 @@ for name, tbl in tables.items():
   display(tbl)
 ```
 
+## Technical notes
+
+The function reads the data and iterates the following process over the names of the tables. It filters the rows of the main dataframe to only include rows that belong to the current table. Then it processes the data for each treatment within the table and creates a dataframe for each treatment. 
+If the period is repeated in the treatment, the data for the treatment has a header row with variable names inserted each period. This function assumes that these header rows are the same within the treatment and reads the top header row as the variable names, then removes all header rows afterwards. All data will be converted to numeric, if possible. Finally, the table for the current treatment is added to the dataframe for the current table. 
+
+After all the tables have been processed, the function returns the dictionary of dataframes.
+
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/). ztree2python is "provided "as is", without warranty of any kind."
 
 ## Reference
 Fischbacher, U. (2007). z-Tree: Zurich toolbox for ready-made economic experiments. *Experimental Economics*, 10(2), 171-178. 
 https://doi.org/10.1007/s10683-006-9159-4.
 
+Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
+
 Takeuchi, K. (2022). ztree2stata: A data converter for z-Tree and Stata users. (*Journal of the Economic Science Association*, R&R.)
 
 I would appreciate it if you kindly mention to this code in a footnote or somewhere.
 
-Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
 
 
 ## Acknowledgment 
