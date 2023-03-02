@@ -57,7 +57,7 @@ https://doi.org/10.1007/s10683-006-9159-4.
 Takeuchi, Kan. (2022). ztree2python.py, http://github.com/takekan/ztree2python.
 (https://sites.google.com/view/takekan/research/ztree2python)
 
-Takeuchi, K. (2022). ztree2stata: A data converter for z-Tree and Stata users. (*Journal of the Economic Science Association*, R&R.)
+Takeuchi, K. (forthcoming). ztree2stata: A data converter for z-Tree and Stata users. *Journal of the Economic Science Association*.
 
 I would appreciate it if you kindly mention to this code in a footnote or somewhere.
 
